@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação</title>
+    <script src="https://kit.fontawesome.com/20b511493a.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #292929;
+            color: #eee;
+            font-size: 24px;
+        }
+
+        h2 {
+            margin-top: 70px;
+            font-size: 36px;
+            color: #bf80ff;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            color: #bf80ff;
+        }
+
+        a:hover {
+            background-color: #525252;
+        }
+
+        a {
+            font-size: 20px;
+            color: #bf80ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Trabalho Conclusão de Etapa </h2>
+    </header>
+    <main>
+        <form action="processar.php">
+            <fieldset>
+                <legend>Simulação</legend>
+                <label for="cliente">Cliente:</label>
+                <input type="text" name="cliente"><br><br>
+                <label for="aporteinicial">Aporte inicial:</label>
+                <input type="number" name="aporteinicial"><br><br>
+                <label for="aportemensal">Aporte Mensal:</label>
+                <input type="number" name="aportemensal"><br><br>
+                <label for="rendimento">Rendimento:</label>
+                <input type="number" name="rendimento" step="0.01" min="0"><br><br>
+                <label for="periodo">Período de Investimento:</label>
+                <input type="number" name="periodo"><br><br>
+                <br>
+                <input type="submit" value="Processar" style="text-align: center;">
+            </fieldset>
+        </form>
+        <br><br>
+        <a href="index.html">Home</a>
+        <br><br>
+    </main>
+    <footer>
+        <p>&copy; IFNMG - 2023 Davi Antônio e Luana Lima </p>
+    </footer>
+</body>
+
+</html>
